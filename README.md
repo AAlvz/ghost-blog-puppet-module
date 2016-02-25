@@ -9,7 +9,7 @@ Requirements
 * Node/npm
   * This module **assumes that your machine has already installed** `node` and `npm`
   so you need to take care of that part.
-  * There's also a [`simple-node-puppet-module`]() you can use to take care of this task.
+  * There's also a [`simple-node-puppet-module`](https://github.com/AAlvz/simple-node-puppet-module) you can use to take care of this task.
 * [Nginx](https://github.com/jfryman/puppet-nginx)
   * The [`puppet-nginx`](https://github.com/jfryman/puppet-nginx) module has to be
     present as well. (To forward Ghost to port 80)
@@ -23,11 +23,12 @@ Just call the class, for example in your default node:
 
 ```
 node default {
+  # Node should be installed already! ->
   class { 'aalvz_ghost': }
 }
 ```
 
-If you're using the simple-node module, it'd like this:
+If you're using the [`simple-node-puppet-module`](https://github.com/AAlvz/simple-node-puppet-module), it'd be like this:
 
 ```
 node default {
